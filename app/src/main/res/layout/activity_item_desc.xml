@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolBar_id"
+        android:background="@color/colorPrimary"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/viewPager_id"
+        android:layout_below="@id/toolBar_id"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textViewDesc_id"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@id/viewPager_id"
+        android:text="@string/description"
+        android:textColor="@color/textColor"
+        android:layout_marginLeft="5dp" />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle_id"
+        android:text="@string/title"
+        android:layout_below="@id/textViewDesc_id"
+        android:layout_alignLeft="@id/textViewDesc_id"
+        android:textColor="@color/textColor"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemTitle_id"
+        android:layout_alignTop="@id/textViewTitle_id"
+        android:layout_below="@id/textViewDesc_id"
+        android:layout_toRightOf="@id/textViewTitle_id"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColor"
+        android:text="iPhone"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle_id"
+        android:text="Buy"
+        android:id="@+id/raisedBtn_id"
+        style="@style/RaisedButton"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/raisedBtn_id"
+        android:id="@+id/flatBtn_id"
+        android:text="@string/add_to_wish_list"
+        style="@style/FlatButton"
+        android:translationY="-10dp"
+        android:layout_alignLeft="@id/raisedBtn_id"/>
+
+
+</RelativeLayout>
