@@ -20,4 +20,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="android_games">Android Games</string>
+    <string name="description">Description</string>
+    <string name="add_to_wish_list">Add to Wish List</string>
+    <string name="title">Title: </string>
 </resources>
